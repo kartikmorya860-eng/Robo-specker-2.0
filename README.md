@@ -1,18 +1,28 @@
-# Robo Speaker
+# Robo Speaker 2.0
 
-Robo Speaker is a small Python utility that uses the Windows SAPI voice engine to speak text you type interactively.
+Robo Speaker 2.0 is a small Python utility that uses the Windows SAPI voice engine to speak text entered by the user.
 
-## Description
+## Overview
 
-This project contains a single script, `my_speaker.py`, that uses the `pywin32`/`win32com` library to access the Microsoft Speech API (SAPI) and speak text entered by the user.
+This project includes a single script, `my_speaker.py`, which uses the `pywin32` / `win32com` library to access Microsoft Speech API (SAPI) and speak any text typed into the console.
+
+## Features
+
+- Interactive text input
+- Text-to-speech using Windows SAPI
+- Exit by typing `bye`
+- Simple and lightweight Python script
 
 ## Requirements
 
-- Windows 10 or later (uses SAPI)
-- Python 3.7+
-- pywin32 (win32com)
+- Windows 10 or later
+- Python 3.7 or newer
+- `pywin32` Python package
 
-Install the dependency with:
+## Installation
+
+1. Open a command prompt or PowerShell window.
+2. Install the dependency:
 
 ```bash
 pip install pywin32
@@ -20,20 +30,28 @@ pip install pywin32
 
 ## Usage
 
-Run the script from the project folder:
+Run the project from its folder:
 
 ```bash
 python my_speaker.py
 ```
 
-The script runs interactively. Type the text you want spoken and press Enter. To exit, type `bye`.
+Then type the text you want the speaker to say and press Enter. To stop the program, type:
 
-Example session:
-
+```text
+bye
 ```
+
+Example:
+
+```text
 Enter what you want me to speak : Hello, world!
 Enter what you want me to speak : bye
 ```
+
+## File
+
+- `my_speaker.py` — Interactive speaker script using Windows SAPI.
 
 ## Notes
 
